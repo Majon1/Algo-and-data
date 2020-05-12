@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using System.Collections.Generic;
 namespace Part1
 {
     public class Tables
