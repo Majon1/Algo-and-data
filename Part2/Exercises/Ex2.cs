@@ -8,7 +8,7 @@ namespace Part2
         {
             int repetition = 1;
             //int j = t[i - 1];
-            for (int i = t[0]; i < t.Length; i++)
+            for (int i = 1; i < t.Length; i++)
             {
                     if (t[i] == t[i - 1])
                     {
