@@ -17,8 +17,8 @@ namespace Part2
                     if (t[i] < min)
                     {
                         min = i;
-                       // t.RemoveAt(i);
                        
+
                         
                     }
                     runs++;
