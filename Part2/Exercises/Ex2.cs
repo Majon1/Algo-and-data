@@ -6,16 +6,25 @@ namespace Part2
     {
         public int Calculate(int[] t)
         {
+            int longest = 0;
             int repetition = 1;
-            //int j = t[i - 1];
-            for (int i = 1; i < t.Length; i++)
+
+            for (int i = 0; i < t.Length - 1; i++)
             {
-                    if (t[i] == t[i - 1])
-                    {
-                        repetition++;
-                    }
+                if (t[i] == t[i + 1])
+                {
+                    repetition++;
+                }
+                else
+                {
+                    repetition = 1;
+                }
+                if (repetition > longest)
+                {
+                    longest = repetition;
+                }
             }
-            return repetition;
+            return longest;
 
             //ex 90
         }
