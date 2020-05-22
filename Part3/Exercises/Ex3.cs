@@ -4,34 +4,33 @@ namespace Part3
 {
     public class Sorting
     {
-        public static void MergeSort(int[] t)
-        {
-            Sort(t);
-            Merge(t);
+        int a = 0;
+        int k = 0;
+        public void MergeSort(int[] t)
+        {   
+            int b = t.Length - 1;
+            {
+                if (a == b) return;
+                k = (a + b) / 2;
+                
 
+
+
+                Merge(a, b, k , k + 1);
+                {
+                    
+                }
+            }
         }
-        public int Sort(int a, int b)
-        {
-            int a;
-            int b;
-            int k;
-        if (a == b); 
-        {
-            return;
-        }
-        k = (t + b)/2;
-        Sort(a, k);
-        Sort(k + 1, b);
-        Merge(a, k, k + 1, b);
-        }
-        public int Merge()
+        public void Merge(int a1, int b1, int a2, int b2);
         {
 
         }
 
-    public static void QuickSort(int[] t)
-    {
 
+        /* public void QuickSort(int[] t)
+         {
+
+         }
     }
-}
 }*/
