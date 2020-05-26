@@ -15,15 +15,16 @@ namespace Part3
              Console.WriteLine(s.Calculate(new int[] { 1, 10, 100 })); // 9
              Console.WriteLine(s.Calculate(new int[] { 1, 1, 1, 1, 1 })); // 0
              Console.WriteLine(s.Calculate(Randomizer(10))); // depends on random*/
-
-            /*  Sorting s = new Sorting(); 
+            Console.WriteLine();
+            //Ex3
+            Sorting s = new Sorting(); 
               int[] sortMe = Randomizer(100);
                int[] sortMeLarge = Randomizer(1000000);
               // s.QuickSort(sortMe);
                s.MergeSort(sortMe);
              //  s.QuickSort(sortMeLarge);
-               s.MergeSort(sortMeLarge);*/
-
+               s.MergeSort(sortMeLarge);
+            Console.WriteLine();
             //Ex4
             /* BinarySearch b = new BinarySearch();
              Console.WriteLine(b.Find((new int[] { 4, 1, 8, 5 }), 2)); // false
@@ -31,14 +32,14 @@ namespace Part3
              Console.WriteLine(b.Find((new int[] { 4, 1, 8, 5, 8, 7, 4, 2, 3 }), 2)); // true
              Console.WriteLine(b.Find((new int[] { 0 }), 0)); // true
              Console.WriteLine(b.Find(Randomizer(100000), 3)); // ?*/
-
+            Console.WriteLine();
             //Ex5
-            Inversions inv = new Inversions();
+            /*Inversions inv = new Inversions();
             int[] t = inv.Create(5, 2);
             foreach (int i in t)
             {
                 Console.Write(i + " ");  // 2 1 3 5 4
-            }
+            }*/
         }
         public static int[] Randomizer(int n)
         {
