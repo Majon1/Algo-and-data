@@ -18,7 +18,6 @@ namespace Part4
             {
                 return(2 * Last((n - 1) / 2) + 1);
             }
-            
         }
     }
 }
