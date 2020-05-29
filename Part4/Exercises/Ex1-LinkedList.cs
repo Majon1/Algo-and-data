@@ -41,7 +41,6 @@ namespace Part4
                 this.tail = node;
             }
         }
-
         public void RemoveFirst()
         {
             this.head = this.head.next;

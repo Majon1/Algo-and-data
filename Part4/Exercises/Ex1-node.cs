@@ -7,7 +7,6 @@ namespace Part4
         public int value;
         public Node next;
         public Node previous;
-
         public Node(int value, Node next, Node previous)
         {
             this.value = value;
