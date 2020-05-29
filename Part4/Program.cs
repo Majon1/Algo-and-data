@@ -20,10 +20,23 @@ namespace Part4
             Console.WriteLine();
 
             //EX2
-            CircleGame g = new CircleGame();
-            Console.WriteLine(g.Last(7)); // 7
-            Console.WriteLine(g.Last(4)); // 1
-            Console.WriteLine(g.Last(123)); // 119
+            /* CircleGame g = new CircleGame();
+             Console.WriteLine(g.Last(7)); // 7
+             Console.WriteLine(g.Last(4)); // 1
+             Console.WriteLine(g.Last(123)); // 119*/
+
+            Console.WriteLine();
+
+            //EX3
+            SmallestDistance s = new SmallestDistance();
+            s.Add(3);
+            s.Add(8);
+           Console.WriteLine(s.Calculate()); // 5
+            s.Add(20);
+           Console.WriteLine(s.Calculate()); // 5
+            s.Add(9);
+           Console.WriteLine(s.Calculate()); // 1
+           
         }
     }
 
