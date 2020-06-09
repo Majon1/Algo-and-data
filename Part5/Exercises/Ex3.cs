@@ -7,17 +7,19 @@ namespace Part5
     {
         public int n;
         public List<int>[] graph;
-        public List<int> visits;
+        public List<int> visited;
+
 
         public Components(int n)
         {
             this.n = n;
             this.graph = new List<int>[n + 1];
+            this.visited = new List<int>();
+
             for (int i = 1; i <= n; i++)
             {
                 graph[i] = new List<int>();
             }
-            this.visits = new List<int>();
         }
         public void AddConnection(int a, int b)
         {
@@ -26,24 +28,27 @@ namespace Part5
         }
         public int Calculate()
         {
+            bool[] visited = new bool[n];
             int sum = 0;
-
-            for (int i = 1; i <= n; i++)
+            int find = 1;
+            foreach (bool item in visited)
             {
-                if (visits.Contains(i))
+                if (item == false)
                 {
-                    return 0;
+                    DFS(find, visited);
+                    sum++;
                 }
-                visits.Add(i);
-                sum++;
             }
             return sum;
         }
+        public void DFS(int v, bool[] visited)
+        {
+            visited[v] = true;
 
-        /*for each node
-          if node not visited
-             // handle component
-             sum + 1
-        return sum*/
+            foreach (int x in graph[v])
+            {
+                if (!visited[x]) DFS(x, visited);
+            }
+        }
     }
 }
