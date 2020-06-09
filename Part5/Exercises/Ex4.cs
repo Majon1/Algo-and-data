@@ -24,9 +24,14 @@ namespace Part5
             this.graph[b].Add(a);
         }
         public bool Examine(int x, int y)
-        {
-           
-            bool[] visited = new bool[n + 1];
+        {bool[] visited = new bool[n];
+        List<int> paths = new List<int>();
+        
+        paths.Add(x);
+        
+        
+        
+           /* bool[] visited = new bool[n + 1];
 
             foreach (int i in graph[x])
             {
@@ -43,6 +48,6 @@ namespace Part5
             {
                 if (!visited[x]) DFS(x, visited);
             }
-        }
+        }*/
     }
 }
