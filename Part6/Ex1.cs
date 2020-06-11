@@ -27,6 +27,7 @@ namespace Part6
         public void AddRoad(int a, int b, int d)
         {
             this.edges.Add(new Edge(a, b, d));
+            this.edges.Add(new Edge(b, a,d));
         }
         public int Calculate(int x, int y)
         {
