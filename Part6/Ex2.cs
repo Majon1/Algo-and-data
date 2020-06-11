@@ -1,12 +1,13 @@
-/*using System;
+using System;
 
 namespace Part6
 {
     public class Dijkstra
     {
+        public int n;
         public Dijkstra(int n)
         {
-
+        this.n = n;
         }
         public void AddRoad(int a, int b, int d)
         {
