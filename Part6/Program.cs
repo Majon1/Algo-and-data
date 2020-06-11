@@ -23,19 +23,19 @@ namespace Part6
             s.AddRoad(1, 3, 6);
             s.AddRoad(3, 4, 5);
             s.AddRoad(4, 5, 3);
-            Console.WriteLine(s.Calculate(1, 5)); // 12
+            Console.WriteLine(s.Calculate(1, 5)); // 12 */
 
             Console.WriteLine();
             //EX3
-            FloydWarshall s = new FloydWarshall(5);
-            s.AddRoad(1, 2, 7);
-            s.AddRoad(2, 4, 2);
-            s.AddRoad(1, 3, 6);
-            s.AddRoad(3, 4, 5);
-            s.AddRoad(4, 5, 3);
-            Console.WriteLine(s.Calculate(1, 5)); // 12
+            FloydWarshall a = new FloydWarshall(5);
+            a.AddRoad(1, 2, 7);
+            a.AddRoad(2, 4, 2);
+            a.AddRoad(1, 3, 6);
+            a.AddRoad(3, 4, 5);
+            a.AddRoad(4, 5, 3);
+            Console.WriteLine(a.Calculate(1, 5)); // 12
 
-            Console.WriteLine();*/
+            Console.WriteLine();
             //EX4
         }
     }
