@@ -12,7 +12,7 @@ namespace Part6
             s.AddRoad(1, 3, 6);
             s.AddRoad(3, 4, 5);
             s.AddRoad(4, 5, 3);
-          // s.AddRoad(6, 7, 3);
+          //s.AddRoad(6, 7, 3);
             Console.WriteLine(s.Calculate(1, 5)); // 12
 
             /*Console.WriteLine();

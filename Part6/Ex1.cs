@@ -27,16 +27,17 @@ namespace Part6
         public void AddRoad(int a, int b, int d)
         {
             this.edges.Add(new Edge(a, b, d));
-            this.edges.Add(new Edge(b, a,d));
+            this.edges.Add(new Edge(b, a, d));
         }
         public int Calculate(int x, int y)
         {
+            int INF = 9999;
             int[] distance = new int[n + 1];
-            for (int i = 0; i < n + 1; i++)
+            for (int i = 1; i < n + 1; i++)
             {
-                distance[i] = int.MaxValue;
+                distance[i] = INF;
             }
-            distance[x] = 0;
+           distance[x] = 0;
 
             while (true)
             {
@@ -56,14 +57,14 @@ namespace Part6
                     break;
                 }
             }
-            //if (distance[y] > 0)
-          //  {
+            if (distance[y] == INF)
+            {
+                return -1;
+            }
+            else
+            {
                 return distance[y];
-            //}
-            //else
-            //{
-              //  return -1;
-            //}
+            }
         }
     }
 }
